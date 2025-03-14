@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+         
+    <title>Vijay's UPSC strengths</title>
+       <style>
+         body{
+              font-family:arial,sans-serif;
+              background-color:#f0f8ff;
+              margin:20px
+             } 
+             h1 {  
+               color: #000080;  
+               text-align: center;  
+               border-bottom: 2px solid gold;  
+               padding-bottom: 10px;  
+           }  
+           ul {  
+               list-style-type: none;  
+               padding: 0;  
+           }  
+           li {  
+               background-color: white;  
+               margin: 10px 0;  
+               padding: 10px;  
+               border-radius: 5px;  
+               box-shadow: 0 2px 4px rgba(0,0,0,0.1);  
+           }  
+           strong {  
+               color: #000080;   
+           }  
+
+
+      #toggleButton{
+                    background-color:#000080;
+                    color:white;
+                    padding:10px 20px;
+                    border:none;
+                    border-radius:5px;
+                    cursor:pointer;
+                    display: block;
+                    margin:0 auto 20px;
+                   }
+#toggleButton:hover{
+                    background-color:#0000ff;
+                    }
+       </style>  
+      
+    </head>
+    <body>
+    <h1>Skills I Gained from UPSC</h1>
+    <button id="toggleButton">Show/Hide Skills</button>
+    <ul>
+       <li><strong>Discipline</strong>: studied 10+ hours daily for 3years </li>
+       <li><strong>critical thinking</strong>: analyzed complex policies </li>
+       <li><strong>time management</strong>: Balanced syllabus deadlines</li>
+    </ul>
+   
+    <script>
+     const toggleButton = document.getElementById("toggleButton");     
+     const skillsList = document.querySelector("ul");
+     toggleButton.addEventListener("click",()=>{
+       if(skillsList.style.display==="none"){
+         skillsList.style.display="block";
+       } else{
+          skillsList.style.display="none";
+       }
+   });
+   </script>
+ </body>
+</html>
